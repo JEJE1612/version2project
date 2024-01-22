@@ -10,6 +10,7 @@ import 'package:flutter_application_1/Feather/HomeLayOut/Presentation/views/chat
 import 'package:flutter_application_1/Feather/HomeLayOut/Presentation/views/profail.dart';
 import 'package:flutter_application_1/Feather/HomeLayOut/Presentation/views/widgets/Setting/views/setting.dart';
 import 'package:flutter_application_1/Feather/Login/presentaion/views/Login.dart';
+import 'package:flutter_application_1/Feather/Login/presentaion/views/forgetpassword.dart';
 import 'package:flutter_application_1/Feather/Regiter/presentaion/views/Register.dart';
 import 'package:flutter_application_1/Feather/splach/presentaion/views/splash_view.dart';
 import 'package:flutter_application_1/core/thems/Mytheam.dart';
@@ -81,6 +82,8 @@ class MyApp extends StatelessWidget {
               Profail.nameKey: (_) => Profail(),
               Setting.nameKey: (_) => Setting(),
               ChatScreen.nameKey: (_) => ChatScreen(),
+              
+            
             },
           );
         },

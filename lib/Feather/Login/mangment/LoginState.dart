@@ -17,3 +17,4 @@ class ScafullLoginState extends LoginState {
 }
 
 class ErrorLoginState extends LoginState {}
+class forgetpasswordstate extends LoginState {}

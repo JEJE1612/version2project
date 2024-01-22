@@ -6,8 +6,8 @@ import 'package:flutter_application_1/Feather/Login/mangment/LoginBloc.dart';
 import 'package:flutter_application_1/Feather/Login/mangment/LoginState.dart';
 import 'package:flutter_application_1/Feather/Login/presentaion/Widgets/CustomButtonAuth%20.dart';
 import 'package:flutter_application_1/Feather/Login/presentaion/Widgets/CustomTextForm.dart';
+import 'package:flutter_application_1/Feather/Login/presentaion/views/forgetpassword.dart';
 import 'package:flutter_application_1/Feather/Regiter/presentaion/views/Register.dart';
-
 import 'package:flutter_application_1/core/utils/constant.dart';
 import 'package:flutter_application_1/core/utils/sharedPresfrace.dart';
 import 'package:flutter_application_1/core/utils/styles.dart';
@@ -28,18 +28,7 @@ class Login extends StatelessWidget {
       create: (context) => LoginBloc(),
       child: BlocConsumer<LoginBloc, LoginState>(
         listener: (context, state) {
-          if (state is LodingLoginState) {
-            const Center(
-              child: CircularProgressIndicator(),
-            );
-          } else if (state is ScafullLoginState) {
-            CacheHealper.SavedData(key: "uid", value: state.uid);
-            tost(text: "Scaffull Login ", state: ToastStae.succes);
-            Navigator.pushNamedAndRemoveUntil(
-                context, HomeLayOut.nameKey, (route) => false);
-          } else if (state is ErrorLoginState) {
-            tost(text: "Error Pleas try Again", state: ToastStae.eror);
-          }
+          
         },
         builder: (context, state) {
           return Scaffold(
@@ -133,7 +122,13 @@ class Login extends StatelessWidget {
                             obscureText: LoginBloc.get(context).obscureText,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Forgetpassword(),
+                                      ));
+                            },
                             child: Container(
                               margin:
                                   const EdgeInsets.only(top: 10, bottom: 20),

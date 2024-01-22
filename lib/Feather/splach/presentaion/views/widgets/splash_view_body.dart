@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/Home.dart';
 import 'package:flutter_application_1/Feather/HomeLayOut/Presentation/views/HomeLayOut.dart';
@@ -8,9 +7,7 @@ import 'package:flutter_application_1/Feather/Login/presentaion/views/Login.dart
 import 'package:flutter_application_1/core/Model/usermodel.dart';
 import 'package:flutter_application_1/core/utils/constant.dart';
 import 'package:flutter_application_1/core/utils/styles.dart';
-
 import 'sliding_text.dart';
-
 class SplashViewbody extends StatefulWidget {
   const SplashViewbody({Key? key}) : super(key: key);
 

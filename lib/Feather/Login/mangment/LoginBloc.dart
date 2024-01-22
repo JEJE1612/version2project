@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Feather/Login/mangment/LoginState.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,5 +32,15 @@ class LoginBloc extends Cubit<LoginState> {
     }).catchError((e) {
       emit(ErrorLoginState());
     });
+  }
+
+  void resetpassword(String email, BuildContext context) {
+    FirebaseAuth.instance.sendPasswordResetEmail(email: email).then((value) {
+      Navigator.pop(context);
+    }
+    );
+       emit(forgetpasswordstate());
+
+
   }
 }

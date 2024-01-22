@@ -3,7 +3,6 @@ import 'package:flutter_application_1/Feather/Admin/Mangment/AdminBloc.dart';
 import 'package:flutter_application_1/Feather/Admin/Mangment/AdminBlocState.dart';
 import 'package:flutter_application_1/Feather/Admin/deleteuser/deleteuserscreen.dart';
 import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/widgets/DeleteCatroies/AddCatoies.dart';
-import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/widgets/AdminSetting.dart';
 import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/widgets/DeleteCatroies/DeleteCatroies.dart';
 import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/widgets/ProfailAdmin/ProfailAdmin.dart';
 import 'package:flutter_application_1/Feather/Admin/presention/HomeLayOut/Home/Views/widgets/ShowCatroies/ShowCatroies.dart';
